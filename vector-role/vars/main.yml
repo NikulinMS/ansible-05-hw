@@ -1,0 +1,5 @@
+---
+# vars file for vector-role
+vector_os_user: "vector"
+vector_os_group: "vector"
+supported_systems: ['Debian']

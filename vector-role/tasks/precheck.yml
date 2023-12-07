@@ -1,0 +1,10 @@
+---
+- name: Check if the system is not support by this role
+  ansible.builtin.debug:
+    msg: "System {{ ansible_distribution }} is not support by this role"
+  when: ansible_distribution not in supported_systems
+
+- name: End play for host if unsupported system detected
+  ansible.builtin.meta: end_host
+  when: ansible_distribution not in supported_systems
+

@@ -1,0 +1,9 @@
+---
+# defaults file for vector-role
+vector_version: "0.21.1"
+vector_os_arch: "x86_64"
+vector_workdir: "/tmp/vector"
+vector_data_dir: "/var/lib/vector"
+all_clickhouse_table: "logs_table"
+all_clickhouse_db: "logs"
+all_clickhouse_url: "http://192.168.101.18:8123"
